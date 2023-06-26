@@ -18,7 +18,22 @@ a{
     cursor: pointer;
 }
 
+:root{
+    --linear-main-bg-color: hsl(0, 0%, 24%);
+    --linear-secondary-bg-color: hsl(0, 0%, 3%);
+    --main-bg-color: hsl(0, 0%, 7%);
+    --secondary-bg-color: hsl(0, 0%, 9%);
+    --project-bg-color: hsl(0, 0%, 24%);
 
+    --text-color: hsl(0, 0%, 100%);
+    --border-color: hsl(0, 0%, 100%);
+    --cta-color: hsl(276, 87%, 51%);
+    --message-color: hsl(0, 0%, 65%);
+
+    --left-margin: 200px;
+    --top-margin: 120px;
+    /* 100vh = 937px */
+}
 
 ::-webkit-scrollbar{
     display: none;
