@@ -239,7 +239,6 @@ section{
     grid-area: project-content;
     display: flex;
     flex-direction: column;
-
     padding: var(--top-margin) var(--left-margin) 135px;
 }
 
@@ -250,7 +249,6 @@ section{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 100%;
     width: 100%;
 }
 
