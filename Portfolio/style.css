@@ -23,7 +23,7 @@ a{
     --linear-secondary-bg-color: hsl(0, 0%, 3%);
     --main-bg-color: hsl(0, 0%, 7%);
     --secondary-bg-color: hsl(0, 0%, 9%);
-    --project-bg-color: hsl(0, 0%, 24%);
+    --project-bg-color: hsl(0, 0%, 17%);
 
     --text-color: hsl(0, 0%, 100%);
     --border-color: hsl(0, 0%, 100%);
@@ -38,6 +38,7 @@ a{
 ::-webkit-scrollbar{
     display: none;
 }
+
 
 section{
     display: grid;
@@ -283,6 +284,33 @@ section{
     width: 1320px;
 }
 
+#not_done > *{
+    filter: blur(10px);
+}
+
+#not_done > img{
+    background-color: var(--secondary-bg-color);
+}
+
+#not_done{
+    position: relative;
+}
+
+#not_done::after{
+    content: "Kommer Snart";
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 0px 3px 5px black;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
 .project-box{
     display: flex;
     flex-direction: column;
@@ -317,6 +345,8 @@ section{
 }
 
 .project-link{
+    position: absolute;
+    bottom: 2rem;
     margin-top: 15px !important;
     text-decoration: underline;
 }
@@ -410,9 +440,13 @@ section{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 450px;
     font-size: 80px; 
     gap: 35px;
+}
+
+.icons img{
+    height: 80px;
 }
 
 .icons svg{
@@ -447,7 +481,7 @@ section{
     border-radius: 5px;
     width: 600px;
     height: 60px;
-    padding: 18px 20px;
+    padding: 14px 20px;
     font-size: 20px;
 }
 
@@ -507,13 +541,12 @@ section{
 
 .contact-icon{
     display: flex;
-    align-items: center;
     font-size: 1.5rem;
     gap: 2ch;
 }
 
 .contact-links{
-    margin-left: -7px;
+    margin-left: -10px;
     display: flex;
     flex-direction: row;
     font-size: 40px;
@@ -531,6 +564,7 @@ section{
 }
 
 .contact-cv{
+    margin-left: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -564,3 +598,9 @@ section{
     width: 100%;
 }
 
+
+@media (max-width: 600px) {
+    *{
+        display: none;
+    }
+}
