@@ -11,7 +11,7 @@ head, body{
 	box-sizing: border-box;
     color: var(--text-color);
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 a{
@@ -30,7 +30,7 @@ a{
     --cta-color: hsl(276, 87%, 51%);
     --message-color: hsl(0, 0%, 65%);
 
-    --left-margin: 200px;
+    --left-margin: 10.5%;
     --top-margin: 120px;
     /* 100vh = 937px */
 }
@@ -81,41 +81,53 @@ section{
     grid-area: top-nav;
     display: flex;
     align-items: baseline;
-    gap: 1rem;
+    justify-content: space-between;
+    height: 100px;
+    padding-inline: var(--left-margin) 100px;
 }
 
-.top-nav p{
-    margin: 1.37% 40.3% 0 var(--left-margin);
+.top-nav .nav-name{
+    font-size: 2.5rem;
+    height: 100%;
+}
+
+.top-nav .nav-name p{
     font-size: 2.5rem;
 }
 
-.top-nav a{
-    padding: 1rem;
+.nav-links{
+    display: flex;
+    flex-wrap: wrap;
     font-size: 1.5rem;
+    gap: 3rem;
+}
+
+.nav-links a{
+    margin: 0;
     position: relative;
 }
 
-.top-nav a:hover{
+.nav-links a:hover{
     transform: scale(110%);
 }
 
-.top-nav a::after{
+.nav-links a::after{
     content: "";
     position: absolute;
-    bottom: 10px;
-    left: 15px;
+    bottom: -5px;
+    left: 0px;
     height: 2px;
     width: 0;
     background-color: var(--cta-color);
     transition: 0.3s;
 }
 
-.top-nav a:hover::after {
-    width: calc(100% - 30px);
+.nav-links a:hover::after {
+    width: 100%;
 }
 
 .home-home::after{
-    width: calc(100% - 30px) !important;
+    width: 100% !important;
 }
 
 
