@@ -80,6 +80,7 @@ section{
 .top-nav{
     grid-area: top-nav;
     display: flex;
+    flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-between;
     height: 100px;
@@ -611,8 +612,3 @@ section{
 }
 
 
-@media (max-width: 600px) {
-    *{
-        display: none;
-    }
-}
