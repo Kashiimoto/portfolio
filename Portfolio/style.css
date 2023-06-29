@@ -462,12 +462,6 @@ section{
     height: 80px;
 }
 
-.icons svg{
-    height: 80px;
-}
-
-
-
 .contact-section{
     display: grid;
     grid-template-columns: 100px 1fr;
