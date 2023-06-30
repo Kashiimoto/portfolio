@@ -196,6 +196,7 @@ section{
 }
 
 .home-buttons .button{
+    overflow-x: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -570,6 +571,7 @@ section{
 }
 
 .contact-cv{
+    overflow-x: hidden;
     margin-left: 0px;
     display: flex;
     justify-content: center;
