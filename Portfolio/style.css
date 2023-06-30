@@ -371,7 +371,6 @@ section{
 
 
 .about-section{
-    display: grid;
     grid-template-columns: 100px 1fr 1fr;
     grid-template-areas: "left-line about-content about-icons";
 
@@ -446,6 +445,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .icons{
@@ -454,16 +454,15 @@ section{
     justify-content: center;
     align-items: center;
     width: 450px;
-    font-size: 80px; 
     gap: 35px;
+    height: fit-content;
 }
 
 .icons img{
-    height: 80px;
+    height: 8vh;
 }
 
 .contact-section{
-    display: grid;
     grid-template-columns: 100px 1fr;
     grid-template-areas: "left-line contact-content";
     height: 90.7vh;
